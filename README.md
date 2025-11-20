@@ -20,22 +20,22 @@ A solução foi desenhada seguindo as melhores práticas de Engenharia de Dados,
 **Processo:** Carregamento via Databricks Volumes com adição de metadados de controle (`ingestion_timestamp`)[cite: 244].
 
 ### 🥈 Camada Silver (Saneamento e Padronização)
-* [cite_start]**Objetivo:** Limpeza, tipagem e enriquecimento dos dados[cite: 206].
+**Objetivo:** Limpeza, tipagem e enriquecimento dos dados[cite: 206].
 * **Transformações:**
-    * [cite_start]Tratamento de dados nulos e inconsistentes (ex: datas e horas)[cite: 332].
-    * [cite_start]Padronização de categorização de motivos (Financeiro, Cartão, etc.)[cite: 153].
-    * [cite_start]Criação de chaves para integridade referencial[cite: 415].
+    * Tratamento de dados nulos e inconsistentes (ex: datas e horas)[cite: 332].
+    * Padronização de categorização de motivos (Financeiro, Cartão, etc.)[cite: 153].
+    * Criação de chaves para integridade referencial[cite: 415].
 
 ### 🥇 Camada Gold (Inteligência de Negócio)
-* [cite_start]**Objetivo:** Criação de tabelas Fato e Dimensão otimizadas para análise (BI)[cite: 441].
-* [cite_start]**Entregáveis:** Painéis analíticos focados nos KPIs de atendimento, funil de conversão e eficiência operacional[cite: 172].
+  **Objetivo:** Criação de tabelas Fato e Dimensão otimizadas para análise (BI)[cite: 441].
+  **Entregáveis:** Painéis analíticos focados nos KPIs de atendimento, funil de conversão e eficiência operacional[cite: 172].
 
 ---
 
 ## 🛠️ Tech Stack
-* [cite_start]**Plataforma:** Databricks (Community/Free Edition) [cite: 171]
+* **Plataforma:** Databricks (Community/Free Edition) [cite: 171]
 * **Linguagem:** Python (PySpark) & SQL
-* [cite_start]**Orquestração:** Databricks Workflows (Jobs Automatizados) [cite: 173]
+* **Orquestração:** Databricks Workflows (Jobs Automatizados) [cite: 173]
 * **Versionamento:** Git/GitHub
 
 ---
