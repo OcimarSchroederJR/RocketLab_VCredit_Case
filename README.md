@@ -8,7 +8,7 @@
 ## 📋 Sobre o Projeto
 A **V-Credit**, instituição financeira com 30 anos de mercado, enfrenta desafios relacionados à digitalização de seus canais de atendimento. [cite_start]O aumento no volume de interações digitais gerou sobrecarga operacional, custos elevados e dispersão de dados, dificultando a visão estratégica da operação[cite: 11, 16, 22].
 
-Este projeto tem como objetivo estruturar a fundação de dados da V-Credit, implementando uma **Arquitetura Medalhão** robusta no Databricks para garantir integridade, rastreabilidade e escalabilidade das informações. [cite_start]O resultado final visa apoiar a tomada de decisão para redução de custos e melhoria na experiência do cliente[cite: 25, 170].
+Este projeto tem como objetivo estruturar a fundação de dados da V-Credit, implementando uma **Arquitetura Medalhão** robusta no Databricks para garantir integridade, rastreabilidade e escalabilidade das informações. O resultado final visa apoiar a tomada de decisão para redução de custos e melhoria na experiência do cliente[cite: 25, 170].
 
 ---
 
