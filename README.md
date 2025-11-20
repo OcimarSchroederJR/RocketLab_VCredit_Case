@@ -16,8 +16,8 @@ Este projeto tem como objetivo estruturar a fundação de dados da V-Credit, imp
 A solução foi desenhada seguindo as melhores práticas de Engenharia de Dados, dividida em camadas lógicas de processamento:
 
 ### 🥉 Camada Bronze (Ingestão)
-* [cite_start]**Objetivo:** Ingestão dos dados brutos ("as-is") provenientes das planilhas fornecidas (Chamados, Clientes, Custos, etc.)[cite: 205].
-* [cite_start]**Processo:** Carregamento via Databricks Volumes com adição de metadados de controle (`ingestion_timestamp`)[cite: 244].
+**Objetivo:** Ingestão dos dados brutos ("as-is") provenientes das planilhas fornecidas (Chamados, Clientes, Custos, etc.)[cite: 205].
+**Processo:** Carregamento via Databricks Volumes com adição de metadados de controle (`ingestion_timestamp`)[cite: 244].
 
 ### 🥈 Camada Silver (Saneamento e Padronização)
 * [cite_start]**Objetivo:** Limpeza, tipagem e enriquecimento dos dados[cite: 206].
