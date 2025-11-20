@@ -8,7 +8,7 @@
 ## 📋 Sobre o Projeto
 A **V-Credit**, instituição financeira com 30 anos de mercado, enfrenta desafios relacionados à digitalização de seus canais de atendimento. O aumento no volume de interações digitais gerou sobrecarga operacional, custos elevados e dispersão de dados, dificultando a visão estratégica da operação.
 
-Este projeto tem como objetivo estruturar a fundação de dados da V-Credit, implementando uma **Arquitetura Medalhão** robusta no Databricks para garantir integridade, rastreabilidade e escalabilidade das informações. O resultado final visa apoiar a tomada de decisão para redução de custos e melhoria na experiência do cliente.
+Este projeto tem como objetivo estruturar a fundação de dados da V-Credit, implementando uma arquitetura medalhão robusta no Databricks para garantir integridade, rastreabilidade e escalabilidade das informações. O resultado final visa apoiar a tomada de decisão para redução de custos e melhoria na experiência do cliente.
 
 ---
 
@@ -16,8 +16,9 @@ Este projeto tem como objetivo estruturar a fundação de dados da V-Credit, imp
 A solução foi desenhada seguindo as melhores práticas de Engenharia de Dados, dividida em camadas lógicas de processamento:
 
 ### 🥉 Camada Bronze (Ingestão)
-**Objetivo:** Ingestão dos dados brutos ("as-is") provenientes das planilhas fornecidas (Chamados, Clientes, Custos, etc.).
-**Processo:** Carregamento via Databricks Volumes com adição de metadados de controle (`ingestion_timestamp`).
+**Objetivo:** Ingestão dos dados brutos ("as-is") provenientes das planilhas fornecidas (Chamados, Clientes, Custos, etc.). 
+ 
+ **Processo:** Carregamento via Databricks Volumes com adição de metadados de controle (`ingestion_timestamp`).
 
 ### 🥈 Camada Silver (Saneamento e Padronização)
 **Objetivo:** Limpeza, tipagem e enriquecimento dos dados.
