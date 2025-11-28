@@ -1,30 +1,27 @@
 resources:
   jobs:
-    Pipeline_Vcredit:
-      name: Pipeline_Vcredit
-      description: Pipeline completa feita pela equipe DeltaCredit - RocketLab Dados
-        2025, composta por camada Bronze, Silver, Gold e Job Automático
-        programado para as 13h no horário de Brasília
+    Pipeline_Orchestration:
+      name: Pipeline_Orchestration
       schedule:
-        quartz_cron_expression: 59 0 13 * * ?
+        quartz_cron_expression: 19 0 13 * * ?
         timezone_id: America/Sao_Paulo
         pause_status: UNPAUSED
       tasks:
         - task_key: ingestao_bronze
           notebook_task:
-            notebook_path: /Workspace/Users/ocimarschroederjr@gmail.com/RocketLab_VCredit_Case/notebooks/1_bronze/ingestao_bronze
+            notebook_path: /Repos/lgscss@cin.ufpe.br/RocketLab_VCredit_Case/notebooks/1_bronze/ingestao_bronze
             source: WORKSPACE
         - task_key: transformacao_silver
           depends_on:
             - task_key: ingestao_bronze
           notebook_task:
-            notebook_path: /Workspace/Users/ocimarschroederjr@gmail.com/RocketLab_VCredit_Case/notebooks/2_silver/transformacao_silver
+            notebook_path: /Repos/lgscss@cin.ufpe.br/RocketLab_VCredit_Case/notebooks/2_silver/transformacao_silver
             source: WORKSPACE
         - task_key: analise_gold
           depends_on:
             - task_key: transformacao_silver
           notebook_task:
-            notebook_path: /Workspace/Users/ocimarschroederjr@gmail.com/RocketLab_VCredit_Case/notebooks/3_gold/analise_gold
+            notebook_path: /Repos/lgscss@cin.ufpe.br/RocketLab_VCredit_Case/notebooks/3_gold/analise_gold
             source: WORKSPACE
       queue:
         enabled: true
