@@ -41,13 +41,4 @@ A solução foi desenhada seguindo as melhores práticas de Engenharia de Dados,
 
 ---
 
-## 📂 Estrutura do Repositório
-```text
-.
-├── docs/               # Documentação de negócio, dicionário de dados e imagens
-├── notebooks/          # Códigos fonte do ETL
-│   ├── 1_bronze/       # Scripts de ingestão
-│   ├── 2_silver/       # Scripts de transformação e limpeza
-│   └── 3_gold/         # Scripts de agregação e modelagem dimensional
-├── dashboard/          # Exportações dos dados para visualização
 └── README.md           # Documentação do projeto
